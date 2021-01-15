@@ -1,0 +1,23 @@
+<navbar />
+
+<view class="px50 mt60 mb100 text-center">
+  <view class="f60 bold mb40">Ticket scanner</view>
+</view>
+
+<view class="row-center">
+  <view style="width: 450rpx; height: 450rpx" class="radius20 card-bg px60 py60 box-b" bindtap="scan">
+    <view class="relative w100 h100 row-center">
+      <view class="absolute bl bt b4 pri t0 l0" style="height: 60rpx; width: 60rpx; border-radius: 20rpx 0 0 0;"></view>
+      <view class="absolute br bt b4 pri t0 r0" style="height: 60rpx; width: 60rpx; border-radius: 0 20rpx 0 0;"></view>
+      <view class="absolute br bb b4 pri b0 r0" style="height: 60rpx; width: 60rpx; border-radius: 0 0 20rpx 0;"></view>
+      <view class="absolute bb bl b4 pri b0 l0" style="height: 60rpx; width: 60rpx; border-radius: 0 0 0 20rpx;"></view>
+      <image src="/images/icons/qrcode.svg" mode="aspectFit" class="h50 w50"></image>
+    </view>
+  </view>
+</view>
+
+<view class="px50 pb100 pt40 fixed b0 w100 box-b fade-bg">
+  <button class="btn" bindtap="scan">Scan</button>
+  <view style="height: 200rpx;"></view>
+  <view class="safe-bottom"></view>
+</view> 

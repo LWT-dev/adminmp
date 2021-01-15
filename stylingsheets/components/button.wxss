@@ -1,0 +1,55 @@
+.btn-unset { 
+  min-height: unset !important;
+  width: unset !important;
+  line-height: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.btn {
+  background: var(--pri);
+  color: white;
+  font-size: 32rpx;
+  padding: 26rpx;
+  width: 100% !important;
+  margin: unset !important;
+  border-radius: 999px;
+  border: solid 2rpx var(--pri);
+  box-shadow: 0 0 16rpx 0 rgba(15,37,59,0.2);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--pri);
+  font-size: 32rpx;
+  padding: 26rpx;
+  width: 100% !important;
+  margin: unset !important;
+  border-radius: 999px;
+  border: solid 2rpx var(--pri);
+  box-shadow: 0 0 16rpx 0 rgba(15,37,59,0.2);
+}
+
+.btn-ghost-sm {
+  background: transparent;
+  color: var(--pri);
+  font-size: 32rpx;
+  /* padding: 26rpx; */
+  width: 60% !important;
+  margin: unset !important;
+  border-radius: 999px;
+  border: solid 2rpx var(--pri);
+  box-shadow: 0 0 16rpx 0 rgba(15,37,59,0.2);
+}
+
+.btn-sm {
+  background: var(--pri);
+  color: white;
+  font-size: 32rpx;
+  /* padding: 26rpx; */
+  width: 60% !important;
+  margin: unset !important;
+  border-radius: 999px;
+  border: solid 2rpx var(--pri);
+  box-shadow: 0 0 16rpx 0 rgba(15,37,59,0.2);
+}

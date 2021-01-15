@@ -1,0 +1,35 @@
+<modal modalContent="{{modalContent}}" wx:if="{{showModal}}" bind:display="hideModal" />
+<navbar />
+
+<view class="px50 mt30 mb80">
+  <view class="f48 bold mb40">{{ticket.event.title}}</view>
+  <view class="flex mb40">
+    <icn name="calendar" size="sm" class="noshrink"></icn>
+    <view class="ml50"> 
+      <view class="mb bold">{{ticket.event.ui_date.show.date}}</view>
+      <view class="grey60">{{ticket.event.ui_date.show.time}}</view>
+    </view>
+  </view>
+
+  <view class="flex mb40">
+    <icn name="location" size="sm" class="noshrink"></icn>
+    <view class="ml50">
+      <view class="mb bold">{{ticket.event.venue_name}}</view>
+      <view class="grey60">{{ticket.event.full_address}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="px50 row-center">
+  <view class="radius20 card-bg px60 py60 box-b w100 column-center">
+    <image src="{{ticket.user.avatar}}" mode="aspectFit" style="width: 200rpx; height: 200rpx;" class="radius-full"></image>
+    <view class="mt50 bold f36">{{ticket.user.name}}</view>
+  </view>
+</view>
+
+<view class="px50 pt40 fixed b0 w100 box-b fade-bg">
+  <button bindtap="checkin" data-next="{{false}}" class="btn mb50">Check in</button>
+  <button bindtap="checkin" data-next="{{true}}" class="btn-ghost">Check in and next</button>
+  <view style="height: 100rpx;"></view>
+  <view class="safe-bottom"></view>
+</view> 

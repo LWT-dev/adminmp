@@ -1,0 +1,31 @@
+/* components/misc/custom-modal.wxss */
+/* components/misc/modal.wxss */
+@import "/app.wxss";
+
+.modal-bg {
+  z-index: 9997;
+  background-color: #000;
+  opacity: 0.75;
+  bottom: 0; left: 0;
+}
+
+.overlay {
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0; left: 0;
+  background: transparent;
+}
+
+.overlay image {
+  width: 20%;
+}
+
+.modal-box {
+  width: 100%;
+  min-height: 300rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

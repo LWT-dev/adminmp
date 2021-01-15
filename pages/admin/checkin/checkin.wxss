@@ -1,0 +1,6 @@
+/* pages/admin/checkin/checkin.wxss */
+
+.blur-img {
+  transform: scale(1.5);
+  filter: blur(50rpx);
+}

@@ -1,0 +1,4 @@
+/* CARD */
+.card-bg {
+  box-shadow: 0 0 8px 0 rgba(15, 37, 59, 0.2);
+}

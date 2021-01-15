@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/admin/scan/scan",
+    "pages/admin/login/login",
+    "pages/admin/checkin/checkin"
+  ],
+  "usingComponents": {
+    "modal": "/components/modal",
+    "icn": "/components/icon"
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "LWT Ticket Scanner",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

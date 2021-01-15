@@ -1,0 +1,11 @@
+<view class="w100 vh100 fixed modal-bg">
+  
+</view>
+<view class="w100 vh100 overlay px60 box-b">
+  <view class="modal-box px30 py40 bg-white column-center">
+    <text class="f36 bold text-center mb40">{{modalContent.title}}</text>
+    <text class="f32 text-center mb20">{{modalContent.content}}</text>
+
+    <button bindtap="hideModal" class="btn-ghost-sm f32 bold mt40">OK</button>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+@import 'fonts.wxss';
+
+page {
+  /* colors (DON'T CHANGE VARIABLE NAMES)*/
+  --pri: #4E08F0;
+  --sec: #0F253B;
+  --ter: #3F2C55;
+  --white: #fff;
+  --black: #000;
+  --white: #fff;
+  --dim: #EBEBEB;
+  --greyLight: #b7bdc4;
+  --grey: #59595B;
+  --greyDark: #333333;
+  --yellow: #ffca00;
+  --orange: #F08302;
+  --red: #BA2454;
+  --redLight: #d86964;
+  --purple: #9F96AA;
+  --navy: #0f1221;
+  --blue: #242e49;
+  --blueLight: #4c5985;
+  --green: #76D5AB;
+  --teal: #C9DED6;
+  --blueCream: #bac2d9;
+  --blueCreamDark: #757b95;
+  --blueCreamVDark: #2b3451;
+  --blueGradient: linear-gradient(to left, #0575e6, #021b79);
+  --bottomSafe: env(safe-area-inset-bottom);
+
+  --grey90: rgb(39, 58, 78);
+  --grey60: rgb(111, 124, 137);
+  --grey30: rgb(183, 189, 196);
+  --grey15: rgb(219, 223, 226);
+  --grey8: rgb(239, 239, 241);
+  --white100: rgb(255, 255, 255);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white30: rgba(255, 255, 255, 0.3);
+  --white15: rgba(255, 255, 255, 0.15);
+
+  /* fonts */
+  font-family: 'Open Sans', sans-serif;
+
+  /* other styles */
+  box-sizing: border-box;
+
+  /* TEXT */
+  font-size: 28rpx;
+  color: var(--grey90);
+  font-weight: 300;
+  /* 100/300/500/700 */
+}
+
+icn { display: flex; }
+
+.page-footer {
+  height: calc(100rpx + 20rpx + 20rpx + var(--bottomSafe)) /* tabbar height + pt & pb + safe area */
+}
+
+.safe-bottom {
+  height: var(--bottomSafe);
+}
+
+.container {
+  padding: 60rpx 20rpx 0 20rpx;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

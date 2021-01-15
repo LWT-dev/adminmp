@@ -1,0 +1,32 @@
+<modal modalContent="{{modalContent}}" wx:if="{{showModal}}" bind:display="hideModal" />
+<navbar />
+<form bindsubmit="login">
+  <view class="px50">
+    <view class="mb100">
+      <view class="f60 bold mb40">Admin sign in</view>
+    </view>
+    
+    <view class="mb60">
+      <view class="grey60 f24 mb">Email</view>
+      <view class="bb b-grey60 pb">
+        <input class="f36" name="email" />
+      </view>
+    </view>
+  
+    <view class="mb60">
+      <view class="grey60 f24 mb">Password</view>
+      <view class="bb b-grey60 pb row-between mb">
+        <input class="f36" name="password" password="{{showPassword}}" />
+        <icn wx:if="{{showPassword}}" catchtap="showPassword" name="ic_invisible"></icn>
+        <icn wx:else catchtap="showPassword" name="ic_visible"></icn>
+      </view>
+    </view>
+  </view>
+
+  <input name="openid" value="{{openid}}" class="dn"></input>
+
+  <view class="w100 px50 box-b fixed b0 pb100">
+    <button form-type="submit" class="btn mb30">Sign in</button>
+    <view class="safe-bottom"></view>
+  </view>
+</form>
