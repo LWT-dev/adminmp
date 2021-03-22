@@ -3,8 +3,9 @@ const BC = require('libs/bc.js');
 wx.p = require('utils/wxp')
 wx.bc = BC
 
-let dev;
-dev = true;
+// const env = 'dev';
+// const env = 'stag';
+const env = 'prod';
 
 App({
   onLaunch: function () {
@@ -15,7 +16,7 @@ App({
     lang: 'en', // cn or en
     userInfo: null,
     openid: null,
-    env: dev?'dev':'prod', // for staging change version number to higher than prod version
+    env: env,
     host: {
       prod: 'https://mp.ladieswhotech.cn',
       stag: 'https://mp-staging.ladieswhotech.cn',
