@@ -10,6 +10,14 @@ Page({
   onLoad: function (options) {
 
   },
+  onShareAppMessage: function () {
+    const image = '/images/lwt_admin_share.jpeg'
+    return {
+      title: `Ladies Who Tech Admin`,
+      imageUrl: image,
+      path: `/pages/admin/scan/scan`
+    }
+  },
 
   scan() {
     console.log('scanning')
